@@ -1,0 +1,1375 @@
+/* This is the main CSS file */
+
+
+/*
+  ===================================== 
+   Main Page CSS Elements
+  =====================================
+*/
+
+body{
+	margin: 2%; 
+	background-color: #f2f2f2;
+	font-family: "Arial Unicode MS", "Lucida Sans Unicode", "Microsoft Sans Serif", "Tahoma", "arial";
+	min-width: 1100px; 
+	overflow-x: auto; 
+	position: relative;
+	width: 98%;
+	min-height: 1350px;
+}
+
+#about{ /* The About text container for the explanatory text on the Index Page */
+	border: 1px black solid;
+	border-radius: 20px;
+	background-color: white;
+	padding: 1%;
+	margin-bottom: 2%;
+	min-height: 180px;
+}
+
+#info{ /* The Info Section about German Sounds on the Index Page */
+	border: 1px black solid;
+	border-radius: 20px;
+	width: 20%;
+	height: 880px;
+	float: left;
+	margin-right: 1.5%;
+	padding: 2% 1% 2% 1%;
+}
+
+#account{ /* Login Form Container for the Administrator Access on the Index Page  */
+	border-top: 1px solid black;
+	margin-top: 20%;
+}
+
+#practice{ /* Practice Description Container on the Index Page */
+	border: 1px black solid;
+	border-radius: 20px;
+	max-width: 50%;
+	height: 880px;
+	padding: 1% 0% 3% 0%;
+	float: left;
+	margin-right: 2%;
+}
+
+#practice_text{ /* Inner Practice Description Container on the Index Page */
+	padding: 2%;
+	margin-bottom: 20px;
+}
+
+#side_right{ /* Right Side Container on the Index Page */
+	padding: 2% 1.5% 2% 1%;
+	height: 880px;
+	max-width: 20%;
+	float: left;
+	border: 1px black solid;
+	border-radius: 20px;
+}
+
+#searchbar{ /* Search Bar on the Index Page */
+	min-height: 200px;
+}
+
+.index_practice{ /* Spacing for the List of Tasks on the Index Page */
+	margin-bottom: 20px;
+}
+
+/* Set a border for the Sound of Day DIV on the Index Page */
+#sound_of_day{
+	border-top: 1px solid black;
+}
+
+
+/*
+=========================================================
+Cookie Banner Items:
+=========================================================
+*/
+
+#footer{ /* General CSS for the Cookie Banner */
+	height: 6%;
+	background-color: white;
+	border: 6px solid #00cc00;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 5000;
+}
+
+
+#cookie_text{ /* Text CSS Container for the Cookie Banner */
+	padding-top: 0.5%;
+	text-align: center;
+}
+
+#footer a { /* Link Text CSS for the Cookie Banner */
+	text-decoration: underline;
+	color: black;
+}
+
+#cookie_close{ /* Close Button for the Cookie Banner */
+	float: right;
+	margin: 0 5px 5px 5px;
+	height: 10px;
+	width: 10px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#cookie_button{ /* "OK"-Button of the Cookie Banner */
+	background-color: #cc3300;
+	border: 0px;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	margin-left: 2%;
+	padding: 5px 7px 5px 7px;
+}
+
+/*
+===================================================================
+Search Function Overlay CSS
+===================================================================
+*/
+
+      /* The Overlay DIV Container */
+      #search_overlay {    
+        display: none; /* Hide the overlay until jQuery changes the display property */
+        z-index: 10000; /* Position the overlay above all other elements */
+        position: absolute;
+        top: 540px; /* position the element absolute and above the main div container on the page */
+        left: 24%;
+		right: 22%;
+        background-color: white;
+        width: 48%;
+		max-height: 530px; /* Define a flexible height for a varying amount of content that the DIV container is filled with by the search script */
+        padding: 5px 5px 20px 20px; 
+        border: 1px solid black;
+		/* Apply a shadow to the Overlay to visually set it apart from the rest of the page */
+        box-shadow: 0 0 10px 5px black;
+		-moz-box-shadow: 0 0 10px 5px black; /* shadow effect for the Firefox Browser */
+        -webkit-box-shadow: 0 0 10px 5px black; /* shadow effect for the Chrome and Safari Browsers */
+		
+      }
+	  
+	/* General Style for the Results that appear within the Overlay */	  
+	#search_results_div{ 
+		height: 540px;
+		min-width: 100%;
+		overflow: auto;
+	}
+	
+	.close_overlay{ /* Style for the Close Button of the Overlay */
+		float: right;
+		font-size: 10pt;
+		font-family: arial black, arial;
+		color: white;
+		background-color: #A20021;
+		font-weight: 900;
+		text-align: center;
+		border: 2px solid black;
+		border-radius: 5px;
+		padding: -1px 5px 1px 5px;
+		line-height: 150%;
+		cursor: pointer;
+		height: 20px;
+		width: 30px;
+	}
+
+	
+/*
+  ===================================== 
+   Practice Page CSS Elements
+  =====================================
+*/
+
+#main{ /* Main Content Container */ 
+	clear: right;
+	padding: 1% 0.5% 1% 0.5%;
+	position: relative;
+}
+
+#head_text{ /* Headline Container  */
+	width: 100%;
+	text-align: center;
+	padding-bottom: 2%;
+}
+
+#practice_detail{ /* Main Box Container */
+	border: 1px black solid;
+	border-radius: 20px;
+	min-width: 100%;
+	height: 1000px;
+	float: left;
+}
+
+#statistics{ /* Statistics Container on practice.php */
+	max-width: 20%;
+	min-height: 820px;
+	float: left;
+	border: 1px solid black;
+	border-radius: 20px;
+	margin: 0% 1% 2% 1%;
+	padding: 1% 1% 0% 1%;
+}
+
+#practice_section{ /* Positioning the Practice Section Container */
+	width: 100%;
+	float: right;
+}
+
+#box_container{ /* Container for all Practice Type Boxes */
+	padding-top: 1%;
+	width: 75%;
+	height: 700px;
+	float: right;
+}
+
+.box{ /* CSS for the Single Boxes */
+	border: 1px solid;
+	padding: 3% 2% 2% 2%;
+	margin-right: 5%;
+	margin-left: 3%;
+	margin-bottom: 5%;
+	width: 35%; 
+	height: 45%;
+	background-color: white;
+	float: left;
+	font-size: 11pt;
+}
+
+#third_box, #fourth_box{
+	height: 35%;
+}
+
+.center{ /* Center-Align the Text in the Boxes */
+	text-align: center;
+}
+
+.indent{ /* Indentation of Text - 1 */
+	margin-left: 20%;
+}
+
+.indent2{ /* Indentation of Text - 2 */
+	margin-left: 10%;
+}
+
+#practice_headline{ /* Centering the Headline */
+	text-align: center;
+}
+
+.practice_headline{ /* Positioning / Spacing for the Task Type Headlines */
+	margin-bottom: 2px;
+	margin-top: 15px;
+}
+
+.box ul li.easy{ /* Passing a Picture of a single star as a list stype item for the Easy Difficulty Categories */
+	list-style-position: inside;
+	list-style-image: url("../media/img/1star.png");
+}
+
+.box ul li.medium{	/* Passing a Picture of 2 stars as a list stype item for the Medium Difficulty Categories */
+	list-style-position: inside;
+	list-style-image: url("../media/img/2star.png");
+}
+
+.box ul li.hard{ /* Passing a Picture of 3 stars as a list stype item for the Hard Difficulty Categories */
+	list-style-position: inside;
+	list-style-image: url("../media/img/3star.png");
+}
+
+.box ul li.expert{	/* Passing a Picture of a 4 stars as a list stype item for the Expert Difficulty Categories */
+	list-style-position: inside;
+	list-style-image: url("../media/img/4star.png");
+}
+
+
+
+/*
+  ===================================== 
+   General Header CSS
+  =====================================
+*/
+.head_wrap{ /* Container for the Main Header Contents (Logo, Titles, Navigation Bar) */
+	height: 160px;
+	margin: 2%;
+}
+
+.head_content{ /* Headlines Positioning of the Header */
+	width: 600px;
+	float: left;
+}
+
+
+/*
+  ===================================== 
+   Logo CSS
+  =====================================
+*/
+#main_logo{ /* Positioning */
+	float: left;
+	margin-right: 25px;
+	margin-right: 4%
+}
+#logo{ /* Logo Size */
+	min-width: 250px;
+	height: 125px;
+}
+
+
+
+/*
+  ===================================== 
+   Navigation Item CSS
+  =====================================
+*/
+/*
+	The CSS Dropdown Menu is based on the instructions from:
+	Nagy, Andor. "How to Create a Pure CSS Dropdown Menu." Http://webdesignerhut.com/. N.p., 6 Mar. 2015. Web. 03 May 2016. http://webdesignerhut.com/css-dropdown-menu/ .
+*/
+
+/* Styling and Positioning the nav container */
+nav {
+    margin: 20px 0;
+    background-color: #9B1D20;
+	z-index: 999;
+}
+
+/* Removing the standard list styling */
+nav ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+    position: relative;
+	text-align: center; /* Align the top menu items to be centered */
+	z-index: 999;
+    }
+
+/* Positioning the navigation list items horizontally next to each other */
+nav ul li {
+    margin: 0px -7px 0 0;
+    display: inline-block;
+    background-color: #9B1D20;
+	z-index: 999;
+    }
+
+/* Styling the links */
+nav a {
+    display: block;
+    padding: 0 45px;
+    color: white;
+    font-size: 20px;
+    line-height: 50px;
+    text-decoration: none;
+	z-index: 999;
+}
+
+/* on hover, the background color changes to black  for all links inside the nav container */
+nav a:hover {
+    background-color: black;
+}
+
+/* First Tier Dropdown Items Style */
+nav ul ul li {
+    min-width: 240px;
+    float: none;
+    display: list-item;
+    position: relative;
+	z-index: 999;
+}
+
+/* Style of the 2nd tier list item links of the Dropdown Menu. 
+(These are the elements that the user see when hovering over a main item of the navigation menu) */
+nav ul li ul li a{
+	background-color: #3D2B3D;
+	color: white;
+    font-size: 18px;
+    line-height: 40px;
+    text-decoration: none;
+	text-align: left;
+	padding: 0 25px; /* Adjusting the Padding so the 2nd and 3rd tier link containers appear smaller than the first tier ones  */
+	z-index: 999;
+}
+
+/* Style of the 3rd tier list item links of the Dropdown Menu */
+nav ul li ul li ul li a{
+	background-color: #635D5C;
+	color: white;
+    font-size: 17px;
+    line-height: 35px;
+    text-decoration: none;
+	text-align: left;
+	z-index: 999;
+}
+
+/* The current element receives a different background color so it is distinguishable for the user where he is, currently */
+.current{
+	background-color: #2D2D2A;
+}
+
+/* Hide Dropdowns by Default (elements will become visible on hover) */
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+/* Display Dropdowns on Hover by making the ul items in question inherit the display property from its parent element */
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+/* Moving the 2nd tier dropdown to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul {
+    position: absolute;
+    top: 0; /* Positioning the next tier right under the above one */
+    left: 100%;
+	z-index: 999;
+}
+
+
+	
+/*
+  ===================================== 
+   Single Item CSS
+  =====================================
+*/
+
+input[type=radio]{ /* General Style for the Radio Buttons */
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+}
+
+label{ /* General Style for the Labels */
+	bottom: 0px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+#start_practice{ /* Start Practice Button */
+	margin-left: 60px;
+	margin-bottom: 60px;
+	padding: 8px 13px 8px 13px;
+	border: 2px outset #0f0f0a;
+	border-radius: 7px;
+	background-color: white;
+}
+
+#start_practice:active{ /* Start Practice Button while clicked upon */
+	border: 2px inset #c2c2a3;
+}
+
+#back_button{ /* Back Button to get back to practice.php */
+	min-width: 80px;
+	min-height: 22px;
+	margin: 20px 20px 20px 20px;
+	float: right;
+	padding: 7px;
+	border: 1px outset #0f0f0a;
+	border-radius: 7px;
+	background-color: white;
+}
+
+#back_button:active{ /* Back to practice.php Button when clicking upon it */
+	border: 2px inset #c2c2a3;
+}
+
+.restyle_link{ /* Restyling Links 1 */
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.category_link{ /* Restyling Links 2 */
+	color: black;
+	text-decoration: none;
+}
+
+.category_link:hover{ /* Hover effect for Links */
+	text-decoration: underline;
+}
+
+.my_padding{ /* CSS for elements that need extra padding */
+	padding-top: 50px;
+}
+
+.sounds_pages_main{ /* Padding for the Main Content of the pages that contain information about the German sound inventory */
+	padding: 1% 2% 2% 2%;
+}
+
+.sound_links{ /* Link styles for the links on the sound information pages */
+	color: black;
+}
+
+.sound_links:hover{ /* Link styles for the links on the sound information pages */
+	color: blue;
+	text-decoration: underline;
+}
+
+/* Style for the Sources Links under Images for the Multiple Choice Tasks */
+#src_img_span{
+	background-color: transparent;
+	margin-top: 15px;
+}
+
+#src_img_span > a{
+	text-decoration: none;
+	color: black;
+	font-size: 10pt;
+}
+
+
+
+.stat{ /* Spacing for underneath each Category List in the Statistics Section */
+	max-width: 100%;
+	padding: 10px;
+}
+#identify{
+	height: 120px;
+}
+
+#fill_gap{
+	height: 180px;
+}
+
+#specials{  /* Add an extra margin to the last list in the statistics section before the reset all button */
+	margin-bottom: 50px;
+	height: 100px;
+}
+
+#stress{
+	height: 110px;
+	padding-top: 35px;
+}
+
+.stat_list{ /* Spacing for the Lists in the Statistics Section */
+	margin-top: 7px;
+	padding-bottom: 35px;
+}
+
+
+ul.stat_list > li { /* Spacing for the List Items in the Statistics Section */
+	margin-top: 0px;
+	width: 220px;
+	float: left;
+	margin-left: -10px;
+}
+
+.underline{ /* Underline Text Style */
+	text-decoration: underline;
+}
+
+.bold{ /* Bold Text Style */
+	font-weight: bold;
+}
+
+input:required.text_align_left { /* Left Align Text in the required input fields */
+	text-align: left;
+}
+
+#bottom_back_button{ /* CSS for the Go Back to Practice Overview Button at the Bottom of Exercises */
+	text-align: center;
+	min-width: 80px;
+	min-height: 22px;
+	margin-right: 40%;
+	margin-left: 40%;
+	margin-top: 4%;
+	float: left;
+	padding: 7px;
+	border: 1px outset #0f0f0a;
+	border-radius: 7px;
+	background-color: white;
+}
+
+#bottom_back_button:active{ /* When clicking upon above button */
+	border: 2px inset #c2c2a3;
+}
+
+.to_top{ /* CSS for the Back to the Top Button that scrolls the page back to the top */
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	padding: 5px 5px 15px 5px;
+	border: 1px solid black;
+	margin: 20px;
+	background-color: white;
+	text-align: center;
+	float: right;
+	clear: both;
+}
+
+.to_top:hover{ /* Hover Effect for the above Button */
+	cursor: pointer;
+}
+
+.to_top:active{ /* Active Effect for the above Button */
+	border: 2px inset #c2c2a3;
+}
+
+.to_top_text{ /* Style for the "Back to the Top" Button Text */
+	width: 70px;
+	text-decoration: none;
+}
+
+#arrow_img{ /* Arrow Image for the Back to Top Button */
+	float: right;
+}
+
+input[type="submit"]{ /* Margin under the submit buttons */
+	margin: 5px;
+}
+
+h3.headline{ /* Adjust the spacing between letters for multiple choice task headlines */
+	letter-spacing: 1px;
+}
+
+
+.error_msg{ /* Error Message CSS for the Search Function and the Login Form */
+	margin: 5px 5px;
+	padding: 2px;
+	min-height: 25px;
+	max-width: 200px;
+	border: 2px solid #cc0000;
+	background-color: white;
+	font-weight: bold;
+}
+
+
+#ger_char_heading{ /* Style for the german characters box heading for the fill the gap tasks */
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+#ger_chars{ /* Style for the german characters box for the fill the gap tasks */
+	float: left;
+	clear: right;
+	max-width: 350px;
+	height: 100px;
+	margin: 0px 20px 60px 120px;
+	border: 1px solid black;
+	background-color: #FAF9FC;
+	margin-bottom: 150px;
+	margin-top: 50px;
+}
+
+#ger_chars span{ /* Style for the single character span contents */
+	padding: 3px;
+	background-color: white;
+}
+
+#ger_chars table{ /* German Character table width */
+	width: 250px;
+}
+
+#final_r_text{ /* Special Text for the Final r task text */
+	max-width: 600px;
+	float: left;
+	margin-bottom: 50px;
+}
+
+audio{ /* General Style for Audio elements */
+	width: 240px;
+	height: 240px;
+	background-image: url("../media/img/500px-Speaker_Icon.png");
+	background-size: 150px 150px;
+    background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* 
+CSS for the tooltip hover effect
+*/
+.hover_text{
+	visibility: hidden; /* Hide the Tooltip Text */
+	z-index: 999; /* Position it above all other elements of the table */
+	border: 2px solid red;
+	background-color: white;
+	position: absolute; 
+	padding: 5px 2px;
+	max-width: 300px;
+	text-align: left;
+	font-size: 11pt;
+	font-weight: normal;
+}
+
+td .hover_text{
+	max-width: 100px;
+}
+
+.results_table th:hover .hover_text{
+	visibility: visible; /* Display the tooltip on hovering about the cell it is contained in */
+}
+
+.results_table td:hover .hover_text{
+	visibility: visible; /* Display the tooltip on hovering about the cell it is contained in */
+}
+
+.hover_me:hover{ /* Add cursor effect when hovered over */
+	cursor: pointer;
+}
+
+/*
+========================================================== 
+CSS for the Reset Buttons of the Statistics Section */
+
+.my_reset{ /* Style for the Single Category Reset Buttons in the Statistics Section */
+	width: 50px;
+	border: 1px solid black;
+	background-color: white;
+	text-align: center;
+	border-radius: 2px;
+	float: right;
+	margin-right: 12px;
+}
+
+#my_reset_all{ /* Style for the Reset All Category Buttons in the Statistics Section */
+	width: 90px;
+	border: 1px solid black;
+	background-color: white;
+	text-align: center;
+	margin: 0 auto;
+	padding: 4px;
+	border-radius: 2px;
+	display: block;
+	float: none;
+}
+
+#my_reset_all:active{ /* Active CSS for the Reset All Button */
+	border: 2px inset #c2c2a3;
+}
+
+.my_reset:active{ /* Active CSS for the Single Category Reset Button */
+	border: 2px inset #c2c2a3;
+}
+
+
+/* 
+================================================
+General Table CSS
+================================================
+*/
+
+table, tr, td{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+table, tr{
+	width: 250px;
+}
+
+table{
+	background-color: white;
+	margin: 15px;
+}
+
+td span{
+	width: 50%;
+	padding: 10px;
+}
+
+th{ /* Giving the Headlines of tables a Grey color */
+	background-color: #e0e0d1;
+}
+
+
+
+/*
+	======================================
+	Media and Media Tags Styles
+	======================================
+*/
+
+#mpc_container{ /* Container DIV for all questions of a category */
+	min-height: 700px;
+	position: relative;
+}
+
+.mpc_question{ /* Multiple Choice Question Container (all Questions) */
+	height: 430px;
+	clear: both;
+	border: 1px solid black;
+	background-color: white;
+	margin-bottom: 150px;
+	min-width: 1300px;
+}
+
+.form_question{ /* Container for each Multiple Choice Question */
+	padding-left: 30px;
+	padding-right: 10px;
+	margin: 0px 10px 15px 10px;
+	width: 250px;
+}
+
+.mpc_table{ /* Table for each Question for Good Positioning */
+	max-width: 900px;
+	height: 300px;
+	background-color: #f1f3f3;
+	 border: 1px solid black; 
+	margin-bottom: 10px;
+	border-collapse: collapse;
+}
+
+.mpc_table td,tr{
+	/* border-collapse: collapse; */
+}
+
+/* The Check Button for the Multiple Choice Tasks */
+input[type="button"].mpc_check_button{
+	margin-left: 50%; /* Center the Button under the tasks */
+	margin-bottom: 2%;
+	background-color: #bec3bb; /* A6B9C0*/
+	padding: 6px;
+	border: 2px outset black;
+	font-size: 14pt;
+	cursor: pointer;
+}
+
+input[type="button"].mpc_check_button:active{
+	border: 2px inset black;
+}
+
+.mpc_table tr:not(.form_td){
+	height: 300px;
+}
+
+.images{ /* Image Styles for the Multiple Choice Questions */
+	float: left;
+	max-width: 320px;
+	max-height: 240px;
+}
+
+.fake_img{ /* If there is no image file for a word, create a DIV that serves as a placeholder for the image */
+	float: left;
+	width: 320px;
+	height: 240px;
+	line-height: 240px;
+	font-weight: bold;
+	font-family: "Times New Roman", Arial, Serif;
+	color: #003366;
+	font-size: 50pt;
+	background-color: white;
+	text-align: center;
+}
+
+.audio{ /* CSS for the audio parts of the "Either video or audio" code part */
+	height: 200px;
+}
+
+/*
+======================================================================================
+======================================================================================
+*/
+/* CSS for  the fill-the-gap tasks */
+
+#fill_gap_text{ /* Introductory Text for the Fill the Gap Tasks */ 
+	max-width: 600px;
+	float: left;
+	margin-bottom: 50px;
+}
+
+/* CSS for the User Info whether his input into the fill-gap field was correct or not */
+.explanations_text{
+	z-index: 100000; /* position above other elements in the item flow so it wont disturb said flow when content is added to this div */
+	width: 340px;
+}
+
+.h4_headline{
+	margin: 5px 0px 10px 0px;
+}
+
+.fill_gap_question{ /* Container for the Single Fill the Gap Tasks */
+	margin: 50px 50px 50px 100px;
+	clear: right;
+	float: left;
+	padding: 20px 50px 0px 50px;
+	width: 350px;
+	height: 350px;
+	background-color: white;
+	border: 1px solid black;
+}
+
+.audio_fill_gap{ /* Style for the Fill Gap Audio Task Version (in opposition to the Video Tasks) */
+	width: 350px;
+	height: 200px;
+	margin-bottom: 0px;
+}
+
+.audio_fill_gap audio{ /* Height for the audio tag of the Fill Gap Tasks */
+	height: 180px;
+}
+
+.video_fill_gap video { /* Style for the video tag of the Fill Gap Tasks */
+	margin-bottom: 20px;
+}
+
+input[readonly] { /* CSS for the readonly text fields for the fill the gap tasks */
+	width: 50px;
+	background-color: #f2f2f2;
+	border: 1px solid black;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-weight: bold;
+}
+
+
+.task_fields input:not([readonly]){ /* targeting the fields that the user has to fill in */
+	width: 40px;
+}
+.task_fields input[type=text] { /* General Width per Fill Gap input fields */
+	width: 65px;
+}
+
+.task_fields span {
+	padding: 10px;
+}
+
+.task_fields input[type=text]:first-child{ /* Adjust the margin for the first input field per task */
+	margin-left: 0px;
+}
+
+.task_fields{ /* CSS for the paragraph in which the input fields and the Check Button are displayed */
+	width: 350px;
+	padding-bottom: 5px;
+	margin-bottom: 0px;
+}
+
+#explanations{ /* Style for the DIV in which the Correct / Wrong Messages are displayed */
+	width: 300px;
+	height: 10px;
+}
+
+
+/* aligning the input fields */
+input:first-of-type {
+	text-align: right;
+}
+
+input:last-of-type{
+	text-align: left;
+}
+
+.fill_gap_check_button{ /* Style for the "Check"-Button */
+	margin-left: 20px;
+	padding: 5px;
+	background-color: white;
+	border: 2px outset black;
+	border-radius: 5px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+/*
+====================================================================================
+CSS for the Stress-type tasks:
+====================================================================================
+*/
+
+#single_str_task{ /* Style for the Single Stress Tasks */
+	margin: 50px;
+	float: left;
+	height: 380px;
+	width: 410px;
+	position: relative;
+	background-color: white;
+	border: 1px solid black;
+}
+
+.str_task{
+	width: 250px;
+	height: 60px;
+	margin-left: 140px;
+	text-align: center;
+	
+}
+
+.str_task > span{ /* Style for the Task Spans of the Stress Type tasks */
+ 	margin: 10px 0px 10px 10px; 
+	padding: 3px;
+	background-color: #F9F9F9;
+	border: 1px solid black;
+	float: left;
+	cursor: pointer;
+	text-align: center;
+	display:table;
+}
+
+.str_task > span.stress_selected{ /* Task Spans which were clicked upon receive this Style */
+	background-color: #ffbb33;
+}
+
+
+ .audio_stress > audio{ /* Style for the audio elements for the stress type tasks */
+	 width: 300px;
+	 height: 170px;
+	 padding-left: 50px;
+	 background-size: 140px 140px;
+	 background-position: center top;
+	 padding-bottom: 30px;
+}
+
+.video_stress{ /* Adjust the padding if the media element is a video */
+	padding-bottom: 30px;
+}
+
+.video_stress > video{
+	padding-left: 50px;
+}
+
+#stress_word > h4{
+	padding-left: 50px;
+}
+
+/* Style for the Stress Tasks Check Button and the Clear Button */
+.stress_check_button{ 
+	margin: 20px 10px 10px 10px;
+	padding: 5px 5px 5px 5px; 
+	background-color: white;
+	border: 2px outset #A20021;
+	border-radius: 5px;
+	font-weight: bold;
+	position: absolute;
+	bottom: 10;
+	right: 100;
+	cursor: pointer;
+}
+
+.stress_check_button:active{
+	border: 2px inset #A20021;
+}
+
+.stress_clear_button{
+	margin: 10px;
+	padding: 5px; 
+	background-color: white;
+	border: 2px outset #4F6D7A;
+	border-radius: 5px;
+	font-weight: bold;
+	position: absolute;
+	bottom: 10;
+	right: 230;
+	cursor: pointer;
+}
+
+.stress_clear_button:active{
+	border: 1px inset #4F6D7A;
+}
+
+
+/*
+_____________________________________
+CSS for the Unstressed "e" Tasks:
+*/
+
+#single_unstr_task{
+	margin: 50px;
+	float: left;
+	padding-left: 50px;
+	padding-right: 50px;
+	height: 330px;
+	position: relative;
+	background-color: white;
+	border: 1px solid black;
+}
+
+.unstr_task{ /* Task Container for the Unstressed e Tasks */
+	width: 250px;
+	height: 60px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.unstr_task > span:not(.not_e){ /* Task Element Spans */ 
+	margin: 4px;
+	padding: 3px;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.unstr_task > span.stress_selected{ /* Selected Unstressed e Elements receive this style */
+	background-color: #ffbb33;
+}
+
+.unstress_check_button{ /* Check Button for the unstressed e tasks */
+	margin: 10px;
+	padding: 5px; 
+	background-color: white;
+	border: 2px outset #A20021;
+	border-radius: 5px;
+	font-weight: bold;
+	float: right;
+	cursor: pointer;
+	position: absolute;
+	bottom: 10;
+	right: 100;
+}
+
+.unstress_check_button:active{
+	border: 2px inset #A20021;
+}
+
+.unstress_clear_button{ /* Clear Button for the unstressed e tasks */
+	margin: 10px;
+	padding: 5px; 
+	background-color: white;
+	border: 2px outset #4F6D7A;
+	border-radius: 5px;
+	font-weight: bold;
+	float: right;
+	cursor: pointer;
+	position: absolute;
+	bottom: 10;
+	right: 230;
+}
+
+
+.unstress_clear_button:active{
+	border: 2px inset #4F6D7A;
+}
+
+
+
+/* CSS for the JQuery-added classes that mark the status (missed, correct, wrong, etc.) and the general style of the task */
+span.not_e{
+	border: none;
+}
+
+.unstr_correct_1{
+	background-color: green;
+}
+
+.unstr_correct_2{
+	background-color: green;
+}
+
+.unstr_missed_1{
+	background-color: grey;
+}
+
+.unstr_missed_2{
+	background-color: grey;
+}
+
+.unstr_wrong_1{
+	background-color: red;
+}
+
+.unstr_wrong_2{
+	background-color: red;
+}
+
+/* Style for the unstressed e feedback tick or cross, for those elements that only have an unstressed e, no other e's */
+.tick_or_cross{
+	font-size: 22pt;
+	font-weight: bold;
+	z-index: 999;
+	position: absolute;
+	bottom: 40;
+	left: 230;
+}
+
+.tick{
+	color: green;
+	display: none;
+}
+
+.cross{
+	color: red;
+	display: none;
+}
+
+
+span.correct_1{
+	background-color: green;
+}
+
+span.correct_2{
+	background-color: green;
+}
+
+span.missed_1{
+	background-color: grey;
+}
+
+span.missed_2{
+	background-color: grey;
+}
+
+span.wrong_1{
+	background-color: red;
+}
+
+span.wrong_2{
+	background-color: red;
+}
+
+button.no_click{ /* Style for making the Check button and sibling elements unclickable (this is a class that is added with jQuery) */
+	pointer-events: none;
+	color: grey;
+}
+
+span.no_click{
+	pointer-events: none;
+}
+
+/* CSS for the container DIV that temporarily stores the unstressed "e" whole term string */
+#word_echo{
+	display: none;
+}
+
+
+/*
+====================================================================================
+CSS for about.php
+====================================================================================
+*/
+
+#example{ /* Example Text before the table */
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+#language_info{ /* Style for the "Why am I being asked to enter my Native Language?" Part of about.php */
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 90px;
+}
+
+#about_info_table{ /* Style for info table about the information stored about the user */
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+#about_info_table th{
+	border: 1px solid black;
+	background-color: #ccccff;
+}
+
+#about_info_table td{
+	border: 1px solid black;
+	background-color: white;
+	padding: 2px 10px 2px 10px;
+}
+
+.paddings{ /* Adjusting the Padding on the table headings */
+	padding: 0px 10px 0px 10px;
+}
+
+#cookie_info{ /* Style for the Cookie Info Text */
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+/*
+====================================================================================
+CSS for german_sounds.php
+====================================================================================
+*/
+#sounds_body{ /* Main Container of the page */
+	width: 95%;
+}
+
+#german_sound_h2{ /* Headline Style for the Sounds Section */
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: underline;
+}
+
+table.german_sounds{ /* Table Style */
+	width: 50%;
+	float: left;
+}
+
+table.german_sounds th, td{
+	text-align: center;
+	padding: 3px;
+}
+
+.german_sound_img{ /* Image and copyright note positioning */
+	margin-right: 40px;
+	float: left;
+}
+
+
+.german_sound_divs{ /* DIV Container for the Monophthongs, Diphthongs and Consonants Sections each */
+	float: left;
+	clear: left;
+	margin: 1% 1% 2% 1%;
+}
+
+#own_consonants{ /* Reduce the width of the consonant table so it fits next to the corresponding image */
+	width: 42%;
+}
+
+/*
+====================================================================================
+CSS for admin_interface.php
+====================================================================================
+*/
+
+.results_headline{ /* Margin to Indent the Headlines of that page */
+	margin-left: 5%;
+}
+
+.results_headline_2{
+	margin-left: 5%;
+}
+
+.results_headline_2:hover{
+	cursor: pointer;
+}
+
+p.results_headline{ /* Positioning of the results headline */
+	margin-bottom: 50px;
+}
+
+.results_table{ /* Style for the Result Tables */
+	width: 90%;
+	margin-bottom: 150px;
+}
+
+.results_table td, th{
+	min-width: 10%;
+}
+
+td span:not([class]){ /* Display the standard background color if a span element has no class specified */
+	background-color: white;
+}
+
+.results_headline{ /* Margin to Indent the Headlines of that page */
+	margin-left: 5%;
+}
+
+p.results_headline{ /* Positioning of the results headline */
+	margin-bottom: 50px;
+}
+
+.category_name{ /* Adjusting the Width for the Category table cells */
+	min-width: 15%;
+}
+
+
+/*
+====================================================================================
+CSS for sources.php
+====================================================================================
+*/
+
+#sources_body{
+	padding: 1.5% 3% 1% 3%;
+}
+
+#sources_body li{
+	margin-top: 5px;
+}
+
+.first_tier{
+	margin: 30px;
+}
+
+
