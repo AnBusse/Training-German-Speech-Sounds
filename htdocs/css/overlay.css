@@ -1,0 +1,61 @@
+/*
+This specifies the looks of the overlay, fed from search_results.php
+*/
+
+      /* The Overlay: */
+      .overlay {
+        /* General properties: */
+        /* - Hidden when the page is first displayed */
+        display: none;
+        /* - Displayed on top of the other page elements */
+        z-index: 10000;
+        /* - Fixed position */
+        position: absolute;
+        top: 180px;
+        left: 25%;
+        /* Appearance: */
+        background-color: white;
+        width: 70%;
+        height: 540px;
+        padding: 20px;
+        border: 1px solid #000000;
+        -moz-box-shadow: 0 0 20px 3px #000000;
+        box-shadow: 0 0 20px 3px #000000;
+        -webkit-box-shadow: 0 0 20px 3px #000000;
+      }
+      /* The Close Button: */
+      .overlay-close {
+        /* Button image: */
+        background-image: url('my_close.png');
+        /* Location: */
+        position: absolute;
+        right: -20px;
+        top: -20px;
+        /* Mouse cursor: */
+        cursor: pointer;
+        /* Size: */
+        height: 35px;
+        width: 35px;
+      }
+      .in-overlay {
+        height: 100%;
+        overflow: auto;
+      }
+      .my-row {
+        width: 500px;
+        padding: 5px;
+        border-bottom: 1px solid #000;
+      }
+      label {
+        margin-right: 5px;
+      }
+      .label-left {
+        text-align: right;
+        vertical-align: top;
+      }
+      .label-right {
+        text-align: left;
+      }
+      .error {
+        color: #cc0000;
+      }
